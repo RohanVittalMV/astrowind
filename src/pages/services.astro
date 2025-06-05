@@ -3,11 +3,11 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Services',
+  title: 'Our Services - Appaxon',
+  description: 'Discover Appaxon\'s AI-powered proactive product security services designed to protect your applications and data.'
 };
 ---
 
@@ -15,198 +15,95 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Services"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
-    actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
-    }}
+    tagline="Appaxon Services"
+    title="Comprehensive AI-Powered Product Security"
+    subtitle="We provide a suite of proactive security services, leveraging Artificial Intelligence to protect your applications and data at every stage of the development lifecycle."
+    actions={[]}
   />
 
-  <!-- Features2 Widget ************** -->
+  <!-- Core Security Offerings (Features2 Widget) ************** -->
 
   <Features2
-    title="Explore our diverse templates"
-    subtitle="Discover our selection below to streamline and elevate your projects."
-    columns={3}
+    title="Our Core Proactive Security Offerings"
+    subtitle="Appaxon's AI-driven services are designed to provide deep insights, continuous protection, and intelligent automation for your product security needs."
+    columns={2}
     items={[
       {
-        title: 'Educational',
+        title: 'AI-Enhanced Threat Intelligence',
         description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
-        icon: 'tabler:school',
+          'Stay ahead of attackers with AI-curated threat intelligence feeds and predictive analysis tailored to your technology stack and risk profile.',
+        icon: 'tabler:radioactive',
       },
       {
-        title: 'Interior Design',
+        title: 'Continuous Vulnerability Management',
         description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
+          'Automated and intelligent scanning for vulnerabilities across your applications, infrastructure, and dependencies, with prioritized remediation guidance powered by AI.',
+        icon: 'tabler:shield-scan',
       },
       {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
-      },
-      {
-        title: 'E-commerce',
+        title: 'Secure SDLC Integration & Automation',
         description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
+          'Embed security seamlessly into your DevOps processes with AI-assisted tools for static and dynamic code analysis, security testing, and compliance monitoring.',
+        icon: 'tabler:settings-automation',
       },
       {
-        title: 'Blog',
+        title: 'AI Security Co-pilot for Developers',
         description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
+          'Empower your development teams with an AI assistant that provides real-time security advice, secure code suggestions, and vulnerability explanations directly within their workflow.',
+        icon: 'tabler:robot',
       },
       {
-        title: 'Business',
+        title: 'AI-Driven Incident Response & Forensics',
         description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
+          'Accelerate incident response and digital forensics with AI-powered tools for anomaly detection, automated log analysis, and attack chain reconstruction.',
+        icon: 'tabler:emergency-bed',
       },
       {
-        title: 'Branding',
+        title: 'Custom AI Security Model Development',
         description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
-      },
-      {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
+          'For unique challenges, we offer services to develop and train custom AI models tailored to your specific product security requirements and data.',
+        icon: 'tabler:brain',
       },
     ]}
   />
 
-  <!-- Content Widget **************** -->
+  <!-- The Appaxon Advantage (Content Widget) **************** -->
 
   <Content
-    isReversed
     items={[
       {
-        title: 'High-Quality Designs',
+        title: 'Proactive, Not Reactive',
         description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
+          'Shift from chasing vulnerabilities to preventing them. Our AI-driven foresight helps you anticipate and mitigate risks before they materialize.',
+        icon: 'tabler:shield-cog',
       },
       {
-        title: 'Customization Tools',
+        title: 'Deep Learning Precision',
         description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
+          "Appaxon's models are trained on vast, diverse security datasets, enabling unparalleled accuracy and context-awareness in threat detection and analysis.",
+        icon: 'tabler:microscope',
       },
       {
-        title: 'Pre-Designed Elements',
+        title: 'Scalable & Adaptive Security',
         description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
+          'Our platform provides security that grows with your business and dynamically adapts to the ever-evolving threat landscape and your changing needs.',
+        icon: 'tabler:zoom-check',
       },
       {
-        title: 'Preview and Mockup Views',
+        title: 'Expert Human Oversight',
         description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
+          'We combine the power of AI with the irreplaceable insights and expertise of our seasoned cybersecurity professionals to deliver robust security solutions.',
+        icon: 'tabler:users-group',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
-    }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">The Appaxon Advantage</h3>
+      <p class="text-muted dark:text-slate-400">
+        Choosing Appaxon means investing in a future-proof security strategy. We are committed to innovation, excellence, and becoming your trusted partner in proactive product security.
+      </p>
     </Fragment>
   </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'Time Savings',
-        description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
-        icon: 'tabler:clock',
-      },
-      {
-        title: 'Professional Appearance',
-        description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
-        icon: 'tabler:school',
-      },
-      {
-        title: 'Cost-Efficiency',
-        description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
-        icon: 'tabler:coin',
-      },
-      {
-        title: 'Instant Download',
-        description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
-        icon: 'tabler:file-download',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
-    </Fragment>
-  </Content>
-
-  <!-- Testimonials Widget *********** -->
-
-  <Testimonials
-    title="Words from real customers"
-    testimonials={[
-      {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
-        image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
-        },
-      },
-      {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
-        image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
-        },
-      },
-      {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
-        image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
-        },
-      },
-    ]}
-    callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:chevron-right',
-    }}
-  />
 
   <!-- CallToAction Widget *********** -->
 
@@ -214,11 +111,12 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Start exploring',
-        href: '/',
+        text: 'Request a Demo',
+        href: '#',
+        icon: 'tabler:Send',
       },
     ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+    title="Secure Your Products with Appaxon Today"
+    subtitle="Ready to experience the next generation of product security? Contact us for a personalized demo and discover how Appaxon's AI-powered solutions can safeguard your business and foster innovation."
   />
 </Layout>
