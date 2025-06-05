@@ -17,6 +17,8 @@ import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin, lazyImagesRehype
 
 import react from '@astrojs/react';
 
+import jopSoftwarecookieconsent from '@jop-software/astro-cookieconsent';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const hasExternalScripts = false;
@@ -60,7 +62,46 @@ export default defineConfig({
     Logger: 1,
   }), astrowind({
     config: './src/config.yaml',
-  }), react()],
+  }), react(), jopSoftwarecookieconsent({
+    categories: {
+        necessary: {
+            enabled: true,
+            readOnly: true
+        },
+        analytics: {}
+    },
+    language: {
+        default: 'en',
+        translations: {
+            en: {
+                consentModal: {
+                    title: 'We use cookies',
+                    description: 'We use cookies to ensure you get the best experience on our website.',
+                    acceptAllBtn: 'Accept all',
+                },
+                preferencesModal: {
+                    title: 'Manage cookie preferences',
+                    acceptAllBtn: 'Accept all',
+                    acceptNecessaryBtn: 'Reject all',
+                    savePreferencesBtn: 'Save preferences',
+                    closeIconLabel: 'Close modal',
+                    sections: [
+                        {
+                            title: 'Strictly Necessary cookies',
+                            description: 'These cookies are essential for the proper functioning of the website and cannot be disabled.',
+                            linkedCategory: 'necessary'
+                        },
+                        {
+                            title: 'Performance and Analytics',
+                            description: 'These cookies collect information about how you use our website. All of the data is anonymized and cannot be used to identify you.',
+                            linkedCategory: 'analytics'
+                        }
+                    ]
+                }
+            }
+        }
+    }
+  })],
 
   image: {
     domains: ['cdn.pixabay.com'],

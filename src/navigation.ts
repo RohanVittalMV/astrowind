@@ -42,6 +42,7 @@ export const footerData = {
   ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
+    { text: 'Sitemap', href: '/sitemap-0.xml' },
   ],
   socialLinks: [
   ],

@@ -1,0 +1,41 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Contact from '~/components/widgets/Contact.astro';
+
+const metadata = {
+  title: 'Request a Demo',
+};
+---
+
+<Layout metadata={metadata}>
+  <Contact
+    title="Request a Demo"
+    subtitle="Fill out the form below to request a demo of Appaxon."
+    inputs={[
+      {
+        type: 'text',
+        name: 'first_name',
+        label: 'First Name',
+      },
+      {
+        type: 'text',
+        name: 'last_name',
+        label: 'Last Name',
+      },
+      {
+        type: 'text',
+        name: 'company',
+        label: 'Company',
+      },
+      {
+        type: 'email',
+        name: 'email',
+        label: 'Email',
+      },
+    ]}
+    textarea={{
+      label: 'Message',
+    }}
+    button="Send Message"
+  />
+</Layout> 

@@ -7,9 +7,6 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Features from '~/components/widgets/Features.astro';
 // import Stats from '~/components/widgets/Stats.astro'; // Removed
-import Features3 from '~/components/widgets/Features3.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-// import Brands from '~/components/widgets/Brands.astro'; // Removed
 import Content from '~/components/widgets/Content.astro'; // Added for contact info and team text.
 import { Terminal } from '../components/Terminal.tsx';
 import Team from '~/components/widgets/Team.astro';
@@ -25,7 +22,15 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
   <Hero
-    actions={[]}
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Request a Demo',
+        href: '/request-demo',
+        target: '_self',
+        icon: 'tabler:chevron-right',
+      },
+    ]}
   >
     <Fragment slot="title">
       Revolutionizing Product Security
@@ -102,7 +107,7 @@ const metadata = {
   <Features
     id="differentiators"
     title="KEY DIFFERENTIATORS"
-    columns={2} // Adjusted to 2 columns for 4 items for better layout
+    columns={2}
     items={[
       {
         title: 'Proactive',
@@ -241,5 +246,4 @@ const metadata = {
     </Fragment>
   </Content>
 
-</Layout> 
 </Layout> 

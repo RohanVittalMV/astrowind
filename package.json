@@ -28,6 +28,7 @@
     "@astrolib/analytics": "^0.6.1",
     "@astrolib/seo": "^1.0.0-beta.8",
     "@fontsource-variable/inter": "^5.2.5",
+    "@jop-software/astro-cookieconsent": "^3.0.1",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.6",
     "astro": "^5.7.3",
@@ -37,7 +38,8 @@
     "lodash.merge": "^4.6.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "unpic": "^4.1.2"
+    "unpic": "^4.1.2",
+    "vanilla-cookieconsent": "^3.1.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
